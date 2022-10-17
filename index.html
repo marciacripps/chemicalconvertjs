@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Converter</title>
+    <link rel="stylesheet" href="index.css">
+
+<!--heading font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+
+<!--button font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">Chemical Convertor</div>
+<form id="chemCalc" onsubmit="calculateChem(); return false">
+
+<label for="chem">Enter Chemical Label Rate</label>
+
+<input id="chem" placeholder="Enter Chemical Label Rate"  type="number" name="chem">
+
+<label class="hash">Select Chemical unit:
+<select name="chem_diff" id="chem_diff">
+<option value="gal">Gallons</option>
+<option value="pint">Pints</option>
+</select>
+</label>
+
+
+
+<input type="submit" name="chem" value="Convert" id="submit">
+
+
+</form>
+<span id="resultContainer">
+</span>
+
+<script src="script.js"></script>
+</body>
+</html>
